@@ -3,7 +3,7 @@
 ## Prerequisites
 
 ```bash
-docker run -d --name pg-image-metadata -e POSTGRES_USER=dbuser -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=image-metadata -p 5432:5432 postgres:13
+docker run -d --name pg-image-metadata -e POSTGRES_USER=dbuser -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=first-micro-service -p 5432:5432 postgres:13
 ```
 
 ## Build and run commands
@@ -53,8 +53,8 @@ Value: true or false
 kubectl version
 kubectl --help
 kubectl get nodes
-kubectl create -f image-catalog-deployment.yaml 
-kubectl apply -f image-catalog-deployment.yaml 
+kubectl create -f first-micro-service-deployment.yaml 
+kubectl apply -f first-micro-service-deployment.yaml 
 kubectl get services 
 kubectl get deployments
 kubectl get pods

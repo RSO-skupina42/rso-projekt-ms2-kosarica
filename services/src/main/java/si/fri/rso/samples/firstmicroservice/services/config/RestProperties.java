@@ -1,4 +1,4 @@
-package si.fri.rso.samples.imagecatalog.services.config;
+package si.fri.rso.samples.firstmicroservice.services.config;
 
 import javax.enterprise.context.ApplicationScoped;
 

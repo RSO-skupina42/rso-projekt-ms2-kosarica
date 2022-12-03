@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>si.fri.rso.samples</groupId>
-    <artifactId>image-catalog</artifactId>
+    <artifactId>first-micro-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -79,22 +79,22 @@
 
             <dependency>
                 <groupId>si.fri.rso.samples</groupId>
-                <artifactId>image-catalog-api</artifactId>
+                <artifactId>first-micro-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>si.fri.rso.samples</groupId>
-                <artifactId>image-catalog-models</artifactId>
+                <artifactId>first-micro-service-models</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>si.fri.rso.samples</groupId>
-                <artifactId>image-catalog-services</artifactId>
+                <artifactId>first-micro-service-services</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>si.fri.rso.samples</groupId>
-                <artifactId>image-catalog-lib</artifactId>
+                <artifactId>first-micro-service-lib</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

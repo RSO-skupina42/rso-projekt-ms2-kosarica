@@ -1,4 +1,4 @@
-package si.fri.rso.samples.imagecatalog.services.beans;
+package si.fri.rso.samples.firstmicroservice.services.beans;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

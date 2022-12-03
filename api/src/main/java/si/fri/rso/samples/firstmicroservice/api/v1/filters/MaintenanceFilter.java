@@ -1,4 +1,4 @@
-package si.fri.rso.samples.imagecatalog.api.v1.filters;
+package si.fri.rso.samples.firstmicroservice.api.v1.filters;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -7,7 +7,7 @@ import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 
-import si.fri.rso.samples.imagecatalog.services.config.RestProperties;
+import si.fri.rso.samples.firstmicroservice.services.config.RestProperties;
 
 @Provider
 @ApplicationScoped
