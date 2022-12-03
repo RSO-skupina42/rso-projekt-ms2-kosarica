@@ -50,7 +50,7 @@ public class ImageMetadataResource {
     public Response getImageMetadata() {
 
         List<ImageMetadata> imageMetadata = imageMetadataBean.getImageMetadataFilter(uriInfo);
-
+        int a = 6;
         return Response.status(Response.Status.OK).entity(imageMetadata).build();
     }
 
