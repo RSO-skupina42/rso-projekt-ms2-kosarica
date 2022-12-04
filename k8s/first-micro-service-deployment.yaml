@@ -13,7 +13,7 @@ spec:
         app: first-micro-service
     spec:
       containers:
-        - image: hieronymusa/prvaslika:latest
+        - image: hieronymusa/first-micro-service:latest
           name: first-micro-service
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
