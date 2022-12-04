@@ -1,4 +1,4 @@
-package si.fri.rso.samples.imagecatalog.lib;
+package si.fri.rso.samples.firstmicroservice.lib;
 
 import java.time.Instant;
 

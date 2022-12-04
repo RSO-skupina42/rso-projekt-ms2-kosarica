@@ -13,9 +13,9 @@ import java.util.stream.Collectors;
 import com.kumuluz.ee.rest.beans.QueryParameters;
 import com.kumuluz.ee.rest.utils.JPAUtils;
 
-import si.fri.rso.samples.imagecatalog.lib.ImageMetadata;
-import si.fri.rso.samples.imagecatalog.models.converters.ImageMetadataConverter;
-import si.fri.rso.samples.imagecatalog.models.entities.ImageMetadataEntity;
+import si.fri.rso.samples.firstmicroservice.lib.ImageMetadata;
+import si.fri.rso.samples.firstmicroservice.models.converters.ImageMetadataConverter;
+import si.fri.rso.samples.firstmicroservice.models.entities.ImageMetadataEntity;
 
 
 @RequestScoped
@@ -32,18 +32,16 @@ public class ImageMetadataBean {
                 "ImageMetadataEntity.getAll", ImageMetadataEntity.class);
 
         List<ImageMetadataEntity> resultList = query.getResultList();
-
         return resultList.stream().map(ImageMetadataConverter::toDto).collect(Collectors.toList());
 
     }
 
     public List<ImageMetadata> getImageMetadataFilter(UriInfo uriInfo) {
-
         QueryParameters queryParameters = QueryParameters.query(uriInfo.getRequestUri().getQuery()).defaultOffset(0)
                 .build();
-
-        return JPAUtils.queryEntities(em, ImageMetadataEntity.class, queryParameters).stream()
+        List<ImageMetadata> something = JPAUtils.queryEntities(em, ImageMetadataEntity.class, queryParameters).stream()
                 .map(ImageMetadataConverter::toDto).collect(Collectors.toList());
+        return something;
     }
 
     public ImageMetadata getImageMetadata(Integer id) {

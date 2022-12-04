@@ -9,7 +9,7 @@ import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
-import si.fri.rso.samples.imagecatalog.lib.ImageMetadata;
+import si.fri.rso.samples.firstmicroservice.lib.ImageMetadata;
 import si.fri.rso.samples.firstmicroservice.services.beans.ImageMetadataBean;
 
 import javax.enterprise.context.ApplicationScoped;
