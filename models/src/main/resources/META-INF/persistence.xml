@@ -3,8 +3,7 @@
     <persistence-unit name="image-catalog-jpa" transaction-type="RESOURCE_LOCAL">
         <non-jta-data-source>jdbc/ImageMetadataDS</non-jta-data-source>
 
-        <class>si.fri.rso.samples.firstmicroservice.models.entities.ImageMetadataEntity</class>
-        <class>si.fri.rso.samples.firstmicroservice.models.entities.UserMetadataEntity</class>
+        <class>si.fri.rso.samples.firstmicroservice.models.entities.KosaricaMetadataEntity</class>
         <class>si.fri.rso.samples.firstmicroservice.models.converters.InstantAtributeConverter</class>
 
         <properties>

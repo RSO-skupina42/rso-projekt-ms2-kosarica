@@ -1,8 +1,4 @@
-INSERT INTO image_metadata (title, description, width, height, created, uri) VALUES ('Our first image', 'This is the first image that we created for the RSO course.', 1280, 1325, TIMESTAMP '2006-01-01 15:36:38', 'https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/tess_first_light-tb.jpg');
-INSERT INTO users (firstname, lastname, address, city) VALUES ('Aljaž', 'Grdadolnik', 'Nekje 15', 'Ljubljana');
-INSERT INTO users (firstname, lastname, address, city) VALUES ('Timotej', 'Petrič', 'Nekje 16', 'Ljubljana');
-INSERT INTO users (firstname, lastname, address, city) VALUES ('Anže', 'Mihevc', 'Nekje 17', 'Ljubljana');
-INSERT INTO users (firstname, lastname, address, city) VALUES ('Domen', 'Vilhar', 'Nekje 18', 'Kranj');
-INSERT INTO users (firstname, lastname, address, city) VALUES ('Nek Nov', 'User', 'Nekje 42', 'Somewhere');
-
-
+INSERT INTO kosarice (imeTrgovine, imeKosarice, izdelek1, cena_izdelek1, izdelek2,cena_izdelek2, izdelek3, cena_izdelek3) VALUES ('Spar', 'sparKosaricaKosilo', 'Špageti Barilla, 500g', '1,49', 'Bolognese omaka Natureta', '2,88', 'Sir parmezan Parmigiano, 200g', '7,98');
+INSERT INTO kosarice (imeTrgovine, imeKosarice, izdelek1, cena_izdelek1, izdelek2,cena_izdelek2, izdelek3, cena_izdelek3) VALUES ('Merkator', 'merkatorKosaricaKosilo', 'Špageti Barilla, 500g', '1,39', 'Bolognese omaka Natureta', '2,99', 'Sir parmezan Parmigiano, 200g', '7,99');
+INSERT INTO kosarice (imeTrgovine, imeKosarice, izdelek1, cena_izdelek1, izdelek2,cena_izdelek2, izdelek3, cena_izdelek3) VALUES ('Spar', 'sparKosaricaZajtrk', 'Jajca 10 kom', '2,89', 'Toast šunka 200g', '1,99', 'KAJZERICE SPAR 5kom,325g', '1,40');
+INSERT INTO kosarice (imeTrgovine, imeKosarice, izdelek1, cena_izdelek1, izdelek2,cena_izdelek2, izdelek3, cena_izdelek3) VALUES ('Merkator', 'merkatorKosaricaZajtrk', 'Jajca 10 kom', '2,49', 'Toast šunka 200g', '2,69', 'Bele kajzerice 10kom, 550g', '1,69');

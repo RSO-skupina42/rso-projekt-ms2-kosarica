@@ -1,36 +1,39 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: first-micro-service-deployment
+  name: second-micro-service-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: first-micro-service
+      app: second-micro-service
   template:
     metadata:
       labels:
-        app: first-micro-service
+        app: second-micro-service
     spec:
       containers:
-        - image: hieronymusa/first-micro-service:latest
-          name: first-micro-service
+        - image: amihevc/kosarica-slika
+          name: second-micro-service
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
-              value: jdbc:postgresql://ella.db.elephantsql.com:5432/cywnmvra
+              valueFrom:
+                secretKeyRef:
+                  name: db-kosarica-pass
+                  key: connectionurl
             - name: KUMULUZEE_DATASOURCES0_USERNAME
               valueFrom:
                 secretKeyRef:
-                  name: db-user-pass
+                  name: db-kosarica-pass
                   key: username
             - name: KUMULUZEE_DATASOURCES0_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: db-user-pass
+                  name: db-kosarica-pass
                   key: password
           ports:
-            - containerPort: 8080
-              name: server
+            - containerPort: 8081
+              name: server2
               protocol: TCP
 
 ---
@@ -38,12 +41,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: first-micro-service
+  name: second-micro-service
 spec:
   type: LoadBalancer
   ports:
-    - port: 8080
+    - port: 8081
       protocol: TCP
-      targetPort: server
+      targetPort: server2
   selector:
-    app: first-micro-service
+    app: second-micro-service

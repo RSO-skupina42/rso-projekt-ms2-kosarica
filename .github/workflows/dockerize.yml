@@ -36,11 +36,4 @@ jobs:
         with:
           file: ./Dockerfile_with_maven_build
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/first-micro-service:${{ steps.current-time.outputs.formattedTime }}
-      - name: Build and push latest
-        id: docker_build2
-        uses: docker/build-push-action@v3
-        with:
-          file: ./Dockerfile_with_maven_build
-          push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/first-micro-service:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/kosarica-slika:${{ steps.current-time.outputs.formattedTime }} , ${{ secrets.DOCKERHUB_USERNAME }}/kosarica-slika:latest

@@ -53,8 +53,8 @@ Value: true or false
 kubectl version
 kubectl --help
 kubectl get nodes
-kubectl create -f first-micro-service-deployment.yaml 
-kubectl apply -f first-micro-service-deployment.yaml 
+kubectl create -f second-micro-service-deployment.yaml 
+kubectl apply -f second-micro-service-deployment.yaml 
 kubectl get services 
 kubectl get deployments
 kubectl get pods

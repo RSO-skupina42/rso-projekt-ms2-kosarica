@@ -16,7 +16,6 @@ public class KosaricaMetadataConverter {
         dto.setIzdelek3(entity.getIzdelek3(), entity.getCena_izdelek3());
 
         //TODO do it better
-
         return dto;
     }
 
